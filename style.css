@@ -1,0 +1,273 @@
+@import 'https://fonts.googleapis.com/css?family=Vampiro+One';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1C1C1E;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 2100px;
+}
+
+html, body {
+    margin: 0px;
+}
+
+.home-body {
+  background-image: url("9.18_sparkles.png");
+}
+
+.recruitment-body {
+  background-image: url("swedishm42.jpg");
+}
+
+.about-body {
+  background-image: url("duel-sparkles.png");
+}
+
+.gulag-body {
+  background-image: url("kv2.gif");
+  width: 100%;
+}
+/* Navbar code */
+.container {
+    background-color: rgba(0, 0, 0, 0.40);
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container img {
+    height: 60px;
+}
+
+.container ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align: top;
+}
+
+.container li {
+  list-style-type: none;
+  padding: 0px;
+  display: inline;
+}
+
+.container li a:hover {
+  color: white;
+}
+
+.container li a {
+    color: lightgray;
+    font: bold 15px 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    line-height: 60px;
+    margin: 0px 10px;
+    padding: 4px 4px; /* Vertical distance between lines */
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.active {
+  color: white!important;
+}
+
+/* Navbar animation */
+.navbar a:before, .navbar a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #9E0202;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.navbar a:before {
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+.navbar a:after {
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+.navbar a:hover:before, .navbar a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+} /* End of navbar animation */
+/* End of navbar code */
+
+/* Page wrapper */
+.page-wrapper {
+  background-image: url("sparkles.png");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin: center;
+} /* End of page wrapper */
+
+/* Home container */
+.home-container {
+  border: 3px solid #9E0202;
+  border-left: 3px;
+  border-right: 3px;
+  width: 890px;
+  padding: 2px;
+  margin: auto;
+  margin-top: 22%;
+  background-color: rgba(0, 0, 0, 0.40);
+  padding-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-title {
+  font: 30px 'Open Sans Condensed', sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.home-info {
+  font: 16px 'Open Sans Condensed', sans-serif;
+  color: white;
+  font-style: normal;
+} /* End of home container */
+
+/* Reqruitment information */
+.requirements-title {
+  font: 30px 'Open Sans Condensed', sans-serif;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 0px;
+}
+
+.requirements-container {
+  padding-top: 22%;
+  color: white;
+  text-align: center;
+  border: 3px solid #9E0202;
+  border-left: 3px;
+  border-right: 3px;
+  width: 950px;
+  padding: 2px;
+  margin: auto;
+  margin-top: 22%;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.requirements-container-image {
+  height:100px;
+}
+
+.requirements-info-container {
+  width: 100%;
+}
+
+.requirements-row-one {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+}
+
+.requirements-container-info {
+  font: 18px 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+}
+
+.context {
+  font: 16px 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+}
+
+.requirements-window {
+  width: 240px;
+  height: 160px;
+  margin: 0px;
+  margin: auto;
+}
+
+.requirements-row-one:nth-child(1) {
+} /* End of reqruitment information */
+
+/* About us information container */
+.about-container {
+  border: 3px solid #9E0202;
+  border-top: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  border-left: 3px;
+  width: 950px;
+  padding: 2px;
+  margin: auto;
+  margin-top: 10%;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.about-title {
+  font: 30px 'Open Sans Condensed', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.about-info-container {
+  text-align: left;
+  border: 3px solid #9E0202;
+  border-top: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  width: auto;
+  padding: 2px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.40);
+  padding-left: 20px;
+}
+
+.about-window {
+  font: 20px 'Open Sans Condensed', sans-serif;
+  color: white;
+}
+
+/* Recruitment discord button */
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+} /* End of recruitment discord button */
+
+/* Footer */
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.40);
+  position: bottom;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 10px;
+}
+
+.footerinfo {
+  font: 15px 'Open Sans Condensed', sans-serif;
+  color: lightgray;
+} /* End of footer */
