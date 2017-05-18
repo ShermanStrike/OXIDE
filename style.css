@@ -57,7 +57,7 @@ html, body {
 
 .container li {
   list-style-type: none;
-  padding: 0px;
+  padding: 0px; /* Spacing in between buttons */
   display: inline;
 }
 
@@ -124,26 +124,40 @@ html, body {
   border: 3px solid #9E0202;
   border-left: 3px;
   border-right: 3px;
-  width: 890px;
+  border-top: 3px;
+  border-bottom: 3px;
+  width: 950px;
   padding: 2px;
   margin: auto;
   margin-top: 22%;
   background-color: rgba(0, 0, 0, 0.40);
-  padding-bottom: 18px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .home-title {
   font: 30px 'Open Sans Condensed', sans-serif;
   color: white;
-  text-align: left;
+  text-align: center;
 }
 
 .home-info {
-  font: 16px 'Open Sans Condensed', sans-serif;
+  font: 18px 'Open Sans Condensed', sans-serif;
   color: white;
   font-style: normal;
+}
+
+.home-info-container {
+  text-align: left;
+  border: 3px solid #9E0202;
+  border-top: 3px;
+  border-right: 3px;
+  border-bottom: 3px;
+  border-left: px;
+  width: auto;
+  padding: 2px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.40);
+  padding-left: 30px;
+  padding-right: 20px;
 } /* End of home container */
 
 /* Reqruitment information */
