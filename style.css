@@ -193,7 +193,7 @@ html, body {
   border: 3px solid #9E0202;
   border-top: 3px;
   border-bottom: 3px;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 
@@ -201,6 +201,15 @@ html, body {
   display: flex;
   justify-content: space-between; 
   width: 100%;
+}
+
+.requirements-info {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 0px;
+
 }
 
 .requirements-container-info {
@@ -290,4 +299,5 @@ a:visited {
 .footerinfo {
   font: 15px 'Open Sans Condensed', sans-serif;
   color: lightgray;
+  text-decoration: none;
 } /* End of footer */
